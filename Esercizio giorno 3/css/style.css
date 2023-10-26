@@ -1,0 +1,47 @@
+header {
+    text-align: center;
+}
+
+header img {
+    height: 50px;
+    width: 130px;
+}
+
+header p {
+    background-color:rgba(250, 235, 215, 0.746);
+}
+
+
+article h1 {
+    text-align: center;
+}
+
+article figure video {
+    width: 100%;
+}
+
+article figure figcaption {
+    text-align: center;
+    color: grey;
+}
+
+div.feature p {
+    color: orange;
+}
+
+div.feature a {
+    color: aquamarine;
+}
+
+article p + a {
+    color:green;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+}
+
+section.method p:first-child {
+    font-weight: bold;
+}
