@@ -1,0 +1,134 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/sfondo.png);
+}
+/* HEADER */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: unset;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(0deg, rgba(6,119,163,1) 37%, rgba(17,197,230,1) 100%);
+    margin: 10px auto;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    width: fit-content;
+}
+
+header img {
+    text-align: center;
+    width: 10em;
+    margin-bottom: 10px;
+}
+
+/* MAIN */
+ main {
+    background-color: white;
+    border: 1px solid;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 10px;
+}
+
+main article h1 + p {
+    color: lightgray;
+}
+
+ main article h1 {
+    font-weight: bold;
+    font-size: 30px;
+ }
+/*id*/
+/*classi*/
+.container {
+    margin: 0 auto;
+    width: min-content;
+}
+
+
+
+
+/* ELMENTI NEL MAIN - ARTICLE */
+.box1 {
+    background-color: lightgray;
+    border: 1px solid;
+    margin: 15px;
+}
+
+.box1 p+p {
+    text-align: right;
+ }
+/* TABELLE */
+th {
+    background-color: rgb(82, 82, 205);
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+/* FORM */
+
+section {
+    background-color: lightgray;
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    height: 25px;
+}
+form input {
+    border: 0;
+    border-bottom: dotted;
+    height: 25px;
+    width: 200px;
+}
+/* ELEMENTI NELL' ASIDE */
+code {
+    background-color: rgb(233, 228, 228);
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+iframe {
+    border-radius: 20px;
+    height: 200px;
+}
+
+aside h2 {
+    text-align: center;
+}
+/* FOOTER */
+footer {
+    background: rgb(4,89,74);
+    background: linear-gradient(0deg, rgba(4,89,74,1) 21%, rgba(5,118,113,1) 37%);
+    color: white;
+    text-align: center;
+}
+
+address a {
+    color: violet;
+}
