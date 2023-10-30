@@ -15,7 +15,7 @@ REGOLE
 
 //String = Indica la stringa ovvero un valore di tipo esclusivamente testuale inserito tra apici singoli ( ' )o doppi( " ) a seconda della nostra necessità di utilizzo
 //Number = Indica un valore di tipo numerico
-//Boolean = indica un valore di tipo booleano ovvero ''true'' o ''false''
+//Boolean = indica un valore di tipo booleano ovvero ''true'' o ''false''. In alternativa è possibile usare come valori anche "1" o "0".
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
@@ -78,6 +78,6 @@ console.log (sottrazione)
 
 let name1 = "john"
 let name2 = "John"
-console.log (name1 == name2)
-console.log (name1 != name2)
-console.log (name1.toLowerCase == name2.toLowerCase)
+console.log (name1 === name2)
+console.log (name1 !== name2)
+console.log (name1.toLowerCase() === name2.toLowerCase())
