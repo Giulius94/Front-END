@@ -41,13 +41,13 @@ console.log(crazy)
 
 function crazyDiff(z) {
     if(z > 19) {
-        return(z - 19) * 3;
+        return  Math.abs(z - 19) * 3;
     } else {
-        return(19 - z);
+        return Math.abs(z - 19);
     }
 }
 
-let tot1 = crazyDiff(4);
+let tot1 = crazyDiff(10);
 console.log(tot1)
 
 /* ESERCIZIO 4
@@ -79,10 +79,10 @@ console.log(ntot)
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function epify(stringa) {
-    if (stringa === "EPICODE") {
-        return(stringa)
+    if (stringa.startsWith("EPICODE")) {
+        return stringa
     } else {
-        return("EPICODE " + stringa)
+        return "EPICODE " + stringa
     }
 }
 
@@ -98,7 +98,7 @@ console.log(epicode)
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function check3and7(y) {
-    if(y <= 0) {
+    if(y >= 0) {
         return("inserisci un numero positivo o superiore a 0")
     } else if (y%3 === 0 ) {
         return("divisibile per 3")
@@ -138,7 +138,7 @@ console.log(rev)
 function upperFirst (upper) {
     let str1 = upper.split(" ");
     for(let i=0; i<str1.length; i++) {
-        str1[i] = str1[i][0].toUpperCase() + str1[i].slice(1)
+        str1[i] = str1[i].charAt(0).toUpperCase() + str1[i].slice(1)
     }
     return str1.join(" ");
 }
@@ -168,13 +168,10 @@ console.log(cutString("Javascript"))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let arr = []
-let arr1 = 0;
-
 function giveMeRandom(num1) {
-    for(i = 0; i < num1; i++) {
-        arr1 = Math.floor(Math.random() * 11);
-        arr.push(arr1)
+    const arr = []
+    for(i = 0; i < num1; i++) { 
+        arr.push(Math.floor(Math.random() * 11))
     }
     return arr
 }
