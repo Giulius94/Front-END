@@ -5,6 +5,9 @@
        /*const changeTitle = function () {
         let titolo = document.querySelector("h1");
         titolo.innerText = "Titolo creato con JS"
+
+        // alternativa
+        document.querySelector("h1").innerText = "Titolo creato con JS"
        }
 
        changeTitle()
@@ -14,8 +17,8 @@
      */
  
        const addClassToTitle = function () {
-        let add = document.querySelector("h1");
-        add.classList.add("myHeading")
+        document.querySelector('div > h1').className ="myHeading"
+        
        }
        addClassToTitle()
  
@@ -24,10 +27,8 @@
        */
  
        const changePcontent = function () {
-        let change = document.querySelectorAll("div > p")
-        change.forEach(p => {
-            p.innerText = "testo cambiato con java"
-        });
+        let change = document.querySelectorAll('div > p')
+        change.forEach(p => p.innerText = "testo cambiato con java");
        }
        changePcontent()
 
@@ -36,9 +37,15 @@
         (tranne quello nel footer) con il valore https://www.google.com
        */
  
-       const changeUrls = function () {
-        let link = document.querySelector("a")
+       /*const changeUrls = function () {
+        let link = document.querySelector('a')
         link.href = "https://www.google.com"
+       }*/ 
+       //correzione
+
+       const changeUrls = function () {
+        let link = document.querySelectorAll('a:not(footer a)')
+        link.forEach(l => l.href = "https://www.google.com")
        }
 
        changeUrls()
@@ -59,11 +66,11 @@
         Scrivi una funzione che aggiunga un paragrafo al primo div
      */
  
-       const addParagraph = function () {
-        let p = document.createElement("p");
+        const addParagraph = function () {
+        const div = document.querySelector('div')
+        let p = document.createElement('p');
         p.innerText = "paragrafo nel primo div";
-        document.querySelector('div').appendChild(p)
-        
+        div.appendChild(p)
        }
        
        addParagraph()
@@ -72,20 +79,22 @@
         Scrivi una funzione che faccia scomparire la prima lista non ordinata
      */
  
-       /* const hideFirstUl = function () {
-        let list = document.querySelector('#firstList');
-        list.style.display = "none";
+        const hideFirstUl = function () {
+        const ul = document.querySelector('#firstList');
+        ul.style.display = "none";
+        //ul.style.visibility = 'hidden'
+        //ul.remove()
        }
 
-       hideFirstUl() */
+       hideFirstUl() 
 
        /* ESERCIZIO 8 
         Scrivi una funzione che renda verde il background di ogni lista non ordinata
        */
  
         const paintItGreen = function () {
-            let first = document.querySelector("#firstList").style.backgroundColor = "green";
-            let second = document.querySelector("#secondList").style.backgroundColor = "green";
+            let first = document.querySelectorAll('ul')
+            first.forEach(ele => ele.style.backgroundColor = 'green')
           }
             paintItGreen();
 
@@ -94,7 +103,7 @@
        */
 
         const makeItClickable = function () {
-        let h1 = document.querySelector("h1");
+        let h1 = document.querySelector('div > h1');
         h1.innerText = h1.innerText.slice(0, -1)
       }
 
@@ -104,7 +113,11 @@
         Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
        */
  
-       const revealFooterLink = function () {}
+       const revealFooterLink = function () {
+        const linkfooter = document.querySelector('footer h3 > a');
+        const txt = linkfooter.getAttribute('href');
+        alert(txt);
+       }
  
        /* ESERCIZIO 11
         Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
