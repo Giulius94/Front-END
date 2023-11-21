@@ -1,3 +1,5 @@
+let numeriestratti = [];
+
 function Tabellone() {
     let table = document.querySelector('#tabellone');
     let tableelement = document.createElement('table')
@@ -13,24 +15,36 @@ Tabellone()
 function estrainumero() {
     let button = document.querySelector('#button')
     button.addEventListener('click', () => {
-        let numeroestratto = (Math.ceil(Math.random()*76))
+        let rand = (Math.ceil(Math.random()*76))
         let numeriselezionati = document.querySelectorAll('#tabellone div')
         numeriselezionati.forEach(cella => {
-        numeriselezionati[numeroestratto-1].style.backgroundColor = "blue";
+        numeriselezionati[rand-1].style.backgroundColor = "blue";
         })
+        if (numeriestratti.length === rand) {
+            console.log('Fine partita')
+        }
+        if (!numeriestratti.includes(rand)) {
+            numeriestratti.push(rand)
+        } else {
+            console.log(rand + ' è già uscito')
+        }
+        numeriestratti.push(rand)
     })
 }
 estrainumero()
 
-let numeriestratti = [];
-let randomNumber;
-  do {
-    randomNumber = Math.floor(Math.random() * 76);
-  } while (numeriestratti.includes(randomNumber));
+function generaTabelline() {
+    let main = document.querySelector('#container')
+    let divtab = document.createElement('div')
+    divtab.className = 'tabellina'
+    for (let i = 1; i < 24; i++) {
+        let div = document.createElement('div')
+        div.className('cell')
+        div.innerText = i+1
+        table.appendChild(cella)
+        divtab.appendChild(divtab)
+    }
+    }
 
-  let numrepeat = numeriestratti.push(randomNumber)
-
-  console.log(numrepeat)
-
-
+    generaTabelline()
 
