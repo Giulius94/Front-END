@@ -256,11 +256,12 @@ footer a {
         margin-bottom: 0;
     }
     header div img+p {
-        margin-top: 5%;
+        margin-top: 1.5em;
+        width: 75%;
     }
     nav {
-        margin-top: 1.2%;
-        margin-left: 65%;
+        margin-top: 1.5em;
+        margin-left: 50%;
     }
     nav ul {
         margin: 0;
@@ -268,8 +269,25 @@ footer a {
         margin-left: 20%;
         width: 12em;
         margin-top: 13%;
-}
     }
+    h1 {
+        font-size: 4.5em;
+    }
+    .fa-lg {
+        font-size: 5em;
+        margin-bottom: 0.2em;
+        border: 5px solid blue;
+    }
+    p {
+        font-size: 1.2em;
+        font-weight: 100;
+    }
+    table {
+        margin: auto;
+        width: 50%;
+    }
+    }
+    
 
 
 
