@@ -334,6 +334,12 @@ h1 + p {
     font-size: 2em;
     padding: 20%;
   }
+  .fa-tag {
+    color: lightgray;
+    left: 28%;
+    font-size: 4em;
+    float: right;
+  }
 }
 
 @media screen and (min-width: 700px) {
