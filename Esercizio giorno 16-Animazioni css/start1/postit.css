@@ -14,7 +14,7 @@ body {
 .taskYellow {
     width: 200px;
     height: 150px;
-    background-color: #f8f8c6;
+    background-color: #f9fac8;
     margin: 1em;
     text-align: center;
     transform: rotate(-4deg);
@@ -44,6 +44,9 @@ body {
     justify-content: center;
     align-items: center;
     animation: postit 2s linear;
+    -moz-animation: postit 2s linear;
+    -o-animation: postit 2s linear;
+    -webkit-animation: postit 2s linear;
 }
 
 p {
