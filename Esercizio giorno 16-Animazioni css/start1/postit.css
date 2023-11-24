@@ -1,0 +1,81 @@
+body {
+    background-color: rgba(102,102,102,255);
+    font-family: 'Indie Flower', cursive;
+}
+.container {
+    width: 1000px;
+    display: flex;
+    margin: 10em auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskYellow {
+    width: 200px;
+    height: 150px;
+    background-color: #f8f8c6;
+    margin: 1em;
+    text-align: center;
+    transform: rotate(-4deg);
+}
+
+.taskGreen {
+    width: 200px;
+    height: 150px;
+    background-color: #baddbb;
+    margin: 1em;
+    text-align: center;
+    transform: rotate(7deg);
+}
+
+.taskPurple {
+    width: 200px;
+    height: 150px;
+    background-color: #b5b4d3;
+    margin: 1em;
+    text-align: center;
+    transform: rotate(-8deg);
+}
+
+.taskYellow, .taskPurple, .taskGreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 1.3em;
+    margin: 0.2em;
+}
+
+p:first-of-type {
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.taskYellow:hover {
+    transform: rotate(0);
+    transform: scale(1.2);
+    transition: ease-in 1s;
+}
+.taskGreen:hover {
+    transform: rotate(0);
+    transform: scale(1.2);
+    transition: ease-in 1s;
+}
+.taskPurple:hover {
+    transform: rotate(0);
+    transform: scale(1.2);
+    transition: ease-in 1s;
+}
+.taskYellow:not(:hover) {
+  transition: ease-out 1s;
+}
+.taskGreen:not(:hover) {
+    transition: ease-out 1s;
+}
+.taskPurple:not(:hover) {
+    transition: ease-out 1s;
+}
