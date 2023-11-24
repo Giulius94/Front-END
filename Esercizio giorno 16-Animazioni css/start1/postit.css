@@ -3,7 +3,7 @@ body {
     font-family: 'Indie Flower', cursive;
 }
 .container {
-    width: 1000px;
+    width: 60%;
     display: flex;
     margin: 10em auto;
     flex-wrap: wrap;
@@ -43,6 +43,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: postit 2s linear;
 }
 
 p {
@@ -78,4 +79,10 @@ p:first-of-type {
 }
 .taskPurple:not(:hover) {
     transition: ease-out 1s;
+}
+
+@keyframes postit {
+    0% {
+        transform: scale(10) translate(150px, -150px);
+    }
 }
