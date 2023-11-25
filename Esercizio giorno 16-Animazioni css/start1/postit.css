@@ -47,6 +47,7 @@ body {
     -moz-animation: postit 2s linear;
     -o-animation: postit 2s linear;
     -webkit-animation: postit 2s linear;
+    box-shadow: inset 0px -20px 20px 0px #0000004a;
 }
 
 p {
