@@ -25,6 +25,7 @@ header {
 header {
     p{
         color: $text;
+        @include paragraph;
     }
     a {
         color: $text;
@@ -89,3 +90,4 @@ button {
 .line-4 {
     display: flex;
 }
+
