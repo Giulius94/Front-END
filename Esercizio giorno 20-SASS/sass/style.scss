@@ -1,10 +1,10 @@
-@import '_reset.scss';
-@import '_space.scss';
-@import '_mixin.scss';
-@import '_font.scss';
-@import '_button.scss';
-@import '_animation.scss';
-@import '_color.scss';
+@import 'reset';
+@import 'space';
+@import 'mixin';
+@import 'font';
+@import 'button';
+@import 'animation';
+@import 'color';
 
 .btn-primary {
     background-color: map-get($button,'bluu');
@@ -23,7 +23,7 @@ header {
 }
 
 header {
-    p{
+    p {
         color: $text;
         @include paragraph;
     }

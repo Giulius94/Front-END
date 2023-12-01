@@ -1,0 +1,20 @@
+@import 'override-bootstrap';
+
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+.round{
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    position: relative;
+}
+
+.bellred {
+    width: 0.8em;
+    height: 0.8em;
+}

@@ -1,0 +1,12 @@
+/* Override Bootstrap Partial */
+@import "../../bootstrap-5.3.2/scss/functions";
+@import "../../bootstrap-5.3.2/scss/variables";
+
+$purple : purple;
+$custom-colors:(
+    'purple':$purple
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+@import "../../bootstrap-5.3.2/scss/bootstrap.scss";
