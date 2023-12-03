@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    background-color: #f5f4f8;
   }
   
 .round{
@@ -45,4 +46,12 @@ body {
 .chartwidth {
     width: 1.5em;
     height: 1.5em;
+}
+
+.footerul {
+    list-style: none;
+}
+
+.footerli {
+    text-decoration: none;
 }
