@@ -110,13 +110,143 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="d-flex justify-content-between align-items-center">
             <div class="rounded-circle round">
                 <i class="bi bi-bell"></i>
                 <span class="position-absolute top-0 my-1 start-100 translate-middle p-1 bg-purple border border-light rounded-circle bellred"></span>
+              </div>
+                <div class="dropdown-menu-start">
+                  <button class="btn dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="position-relative d-flex">
+                   <img src="assets/img/avatar-1.jpg" alt="avatar-1" class="avatar1 rounded-circle">
+                   <span class="position-absolute bottom-0 start-100 translate-middle bg-success border border-light rounded-circle bellred span-avatar"></span>
+                  </div>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-lg-end">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
         </div>
       </div>
     </nav>
+    <main>
+      <article>
+        <div class="bg-purple">
+          <div class="container d-flex justify-content-center align-items-center">
+            <div>
+              <h1 class="text-white fw-bold">Welcome Web Students!</h1>
+              <p class="text-white-50 w-50">Hand-picked instructor and expertly crafted courses, designed for the modern students and entrepeneur</p>
+              <div>
+                <a href="#" class="btn btn-success">Browse Courses</a>
+                <a href="#" class="btn btn-light">Are you instructor?</a>
+              </div>
+            </div>
+            <div>
+              <img src="assets/img/hero-img.png" class="" alt="hero-img">
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow">
+          <div class="container d-flex justify-content-around align-items-center flex-r">
+            <div class="d-flex">
+              <div class="align-self-center me-4 pink">
+                <i class="bi bi-camera-video"></i>
+              </div>
+              <div>
+                <p class="h6 mt-3 m-auto">30,000 online courses</p>
+                <p>Enjoy a variety of fresh topics</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="align-self-center me-4 pink">
+                <i class="bi bi-people"></i>
+              </div>
+              <div>
+                <p class="h6 mt-3 m-auto">Expert instruction</p>
+                <p>Find the right instruction for you</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="align-self-center me-4 pink">
+                <i class="bi bi-clock"></i>
+              </div>
+              <div>
+                <p class="h6 mt-3 m-auto">Lifetime access</p>
+                <p>Learn of our schedule</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <section>
+        <div class="card-group container margin">
+          <p class="h4 d-flex mb-5">Reccomended to you<p>
+          <div class="d-flex justify-content-between">
+            <div class="card cardwidth">
+              <img src="assets/img/course-graphql.jpg" class="card-img-top cardsize" alt="graphql">
+              <div class="card-body">
+                <p class="h6 w-75">GraphQl:Introduction to graphQL for beginners</p>
+                <div class="d-flex align-content-center mt-2">
+                <i class="bi bi-clock m-1"></i>
+                <p class="m-1">2h 40m</p>
+                <img src="assets/img/bar-chart-advance.svg" class="chartwidth m-1" alt="advanced">
+                <p class="m-1">Advanced</p>
+                </div>
+                <div class="d-flex align-content-center mt-3">
+                  <i class="bi bi-star-fill m-1 text-warning"></i>
+                  <i class="bi bi-star-fill m-1 text-warning"></i>
+                  <i class="bi bi-star-half m-1 text-warning"></i>
+                  <i class="bi bi-star m-1 text-warning"></i>
+                  <i class="bi bi-star m-1 text-warning"></i>
+                  <p class="m-1 text-warning">2,5</p><span class="m-1 text-secondary">(1,500)</span>
+                </div>
+                <div class="d-flex align-content-center mt-3">
+                  <p class="h5">500$</p><span class="text-secondary text-decoration-line-through ms-1">600$</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white align-items-center d-flex">
+                <img src="assets/img/avatar-5.jpg" class="chartwidth rounded-circle me-2" alt="Brooklyn"><span>Brooklyn Simmons</span>
+                <i class="bi bi-bookmark m-auto"></i>
+              </div>
+            </div>
+            <div class="card cardwidth">
+              <img src="assets/img/course-javascript.jpg" class="card-img-top cardsize" alt="javascript">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card cardwidth">
+              <img src="assets/img/course-node.jpg" class="card-img-top cardsize" alt="nodejs">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card cardwidth">
+              <img src="assets/img/course-laravel.jpg" class="card-img-top cardsize" alt="laravel">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </section>
+    </main>
     <script src="bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

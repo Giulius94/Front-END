@@ -38,7 +38,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-purple: purple;
+  --bs-purple: #7550fe;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -47,7 +47,7 @@
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
-  --bs-purple-rgb: 128, 0, 128;
+  --bs-purple-rgb: 117, 80, 254;
   --bs-primary-text-emphasis: #052c65;
   --bs-secondary-text-emphasis: #2b2f32;
   --bs-success-text-emphasis: #0a3622;
@@ -3104,19 +3104,19 @@ textarea.form-control-lg {
 
 .btn-purple {
   --bs-btn-color: #fff;
-  --bs-btn-bg: purple;
-  --bs-btn-border-color: purple;
+  --bs-btn-bg: #7550fe;
+  --bs-btn-border-color: #7550fe;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #6d006d;
-  --bs-btn-hover-border-color: #660066;
-  --bs-btn-focus-shadow-rgb: 147, 38, 147;
+  --bs-btn-hover-bg: #6344d8;
+  --bs-btn-hover-border-color: #5e40cb;
+  --bs-btn-focus-shadow-rgb: 138, 106, 254;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #660066;
-  --bs-btn-active-border-color: #600060;
+  --bs-btn-active-bg: #5e40cb;
+  --bs-btn-active-border-color: #583cbf;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: purple;
-  --bs-btn-disabled-border-color: purple;
+  --bs-btn-disabled-bg: #7550fe;
+  --bs-btn-disabled-border-color: #7550fe;
 }
 
 .btn-outline-primary {
@@ -3256,19 +3256,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-purple {
-  --bs-btn-color: purple;
-  --bs-btn-border-color: purple;
+  --bs-btn-color: #7550fe;
+  --bs-btn-border-color: #7550fe;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: purple;
-  --bs-btn-hover-border-color: purple;
-  --bs-btn-focus-shadow-rgb: 128, 0, 128;
+  --bs-btn-hover-bg: #7550fe;
+  --bs-btn-hover-border-color: #7550fe;
+  --bs-btn-focus-shadow-rgb: 117, 80, 254;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: purple;
-  --bs-btn-active-border-color: purple;
+  --bs-btn-active-bg: #7550fe;
+  --bs-btn-active-border-color: #7550fe;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: purple;
+  --bs-btn-disabled-color: #7550fe;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: purple;
+  --bs-btn-disabled-border-color: #7550fe;
   --bs-gradient: none;
 }
 
@@ -6936,8 +6936,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-purple-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-purple:hover, .link-purple:focus {
-  color: RGBA(102, 0, 102, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(102, 0, 102, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(94, 64, 203, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(94, 64, 203, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-body-emphasis {
@@ -11967,4 +11967,32 @@ body {
 .bellred {
   width: 0.8em;
   height: 0.8em;
+}
+
+.avatar1 {
+  width: 2em;
+  height: 2em;
+}
+
+.pink {
+  background-color: #ffeeda;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+.margin {
+  margin-top: 12em;
+}
+
+.cardsize {
+  height: 10em;
+}
+
+.cardwidth {
+  width: 23%;
+}
+
+.chartwidth {
+  width: 1.5em;
+  height: 1.5em;
 }/*# sourceMappingURL=style.css.map */
