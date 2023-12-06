@@ -18,7 +18,7 @@ class User {
 }
 
 
-let m = new User('Mario', 'Rossi', 29, 'Roma');
+let m = new User('Mario', 'Rossi', 28, 'Roma');
 let g = new User('Giovanni', 'Verdi', 31, 'Milano');
 let f = new User('Francesca', 'Neri', 29, 'Napoli');
 
