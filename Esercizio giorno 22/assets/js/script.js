@@ -58,6 +58,7 @@ let formBtn = document.querySelector('#petForm button');
 formBtn.addEventListener('click', () => {
     let f = document.querySelector('#petForm form');
     let petName = f[0].value;
+    console.log(petName);
     let ownerName = f[1].value;
     let species = f[2].value;
     let breed = f[3].value;
