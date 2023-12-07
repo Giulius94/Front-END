@@ -1,7 +1,7 @@
 
-let xhr = new XMLHttpRequest(); // Ogg in grado di effettuare Richieste al Server - readyState = 0
-xhr.open('GET', 'https://striveschool-api.herokuapp.com/books'); // Definisco il Method e URL della chiamate - readyState = 1
-xhr.send(); // Eseguo la chiamata - readyState = 2
+let xhr = new XMLHttpRequest(); //readyState = 0
+xhr.open('GET', 'https://striveschool-api.herokuapp.com/books'); // readyState = 1
+xhr.send(); // readyState = 2
 // readyState = 3	LOADING	Downloading; responseText holds partial data.
 // readyState = 4	DONE	The operation is complete.
 xhr.onreadystatechange = function() {
