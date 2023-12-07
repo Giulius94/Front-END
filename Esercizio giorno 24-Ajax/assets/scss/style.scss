@@ -1,0 +1,18 @@
+@import "override-bootstrap";
+
+@import "functions";
+@import "variables";
+@import "mixins";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.card-text {
+    font-size: 2em;
+}
+
+#contenitoreLocandine .badge {
+    max-height: 1.5em;
+}

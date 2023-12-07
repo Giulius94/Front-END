@@ -18,6 +18,7 @@ checkNameDescription()
 prendiInput()
 rimuoviInput()
 contatore()
+addToListButton()
 
 
 
@@ -63,9 +64,20 @@ setInterval(() => {
 }
 
 function aumentoContatore() {
-    let seconoAttuale = Date.now();
     let risultatoSecondi = Math.floor(Date.now() /1000) - sessionStorage.getItem('tempoInizio');
     let spanContatore = document.querySelector('#contatore span');
     spanContatore.innerText = risultatoSecondi;
+}
+
+
+function addToListButton() {
+    document.querySelector('#bottoneToDo').addEventListener('click', () => {
+        let testoInput = document.querySelector('#toAggiungi').value;
+        let liElement = document.createElement('li');
+        let ol = document.querySelector('#listOl');
+        ol.appendChild(liElement);
+        liElement.innerHTML = testoInput;
+        localStorage.setItem("Inputlista",testoInput) 
+    })
 }
 
