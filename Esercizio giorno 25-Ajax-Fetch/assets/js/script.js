@@ -1,7 +1,5 @@
 // Example https://www.pexels.com/
 
-loadImmagini('gatto', '2')
-
 function loadImmagini(query, numeroPagina) {
 
 let campoRicerca = query;
@@ -23,6 +21,7 @@ fetch(UrlPexel, {
     .then(response => response.json())
     .then (json => {
       let divPadre = document.querySelector('#padreCard')
+      divPadre.innerHTML = '';
       json.photos.forEach(element => {
         let divCol = document.createElement('div');
         divCol.className = 'cardsingola col-md-4 d-flex align-items-stretch';
@@ -50,20 +49,32 @@ fetch(UrlPexel, {
 
       });
     })
-
-
-    /* .then(json => {
-        let ul = document.querySelector('#photo');
-        json.photos.forEach(photo => {
-             //photo.src.small
-            let li = document.createElement('li');
-            li.className = 'list-group-item';
-            let img = document.createElement('img');
-            img.src = photo.src.small;
-            img.alt = photo.alt;
-            li.appendChild(img);
-            ul.appendChild(li);
-        })
-    })
-    .catch(error => console.log(error)) */
+    .catch(error => console.log(error + 'errore'))
   }
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('#divBottoni').addEventListener('click', (e) => {
+        e.preventDefault();
+        if(e.target.className == 'btn btn-primary my-2') {
+            loadImmagini("cat")
+        }
+        if(e.target.className == 'btn btn-secondary my-2') {
+          loadImmagini("dogs")
+      }
+    
+    
+    })
+
+    document.querySelector('#padreCard').addEventListener('click', (e) => {
+      e.preventDefault();
+      if(e.target.className == 'btn btn-sm btn-danger text-white btn-outline-secondary') {
+        let parent = e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
+        let figlio = e.target.parentNode.parentNode.parentNode.parentNode.parentNode;
+        parent.removeChild(figlio)
+      }
+    
+    })
+})
+
