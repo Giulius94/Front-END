@@ -1,4 +1,3 @@
-
 let xhr = new XMLHttpRequest(); //readyState = 0
 xhr.open('GET', 'https://striveschool-api.herokuapp.com/books'); // readyState = 1
 xhr.send(); // readyState = 2
@@ -18,30 +17,57 @@ arrayStorageOnLoad()
 
 
 
-function createList(params) {
+function createList(element) {
 
-    params.forEach((element, index) => {
-        let divCard = document.createElement('div');
-        divCard.classList = 'col';
-        divCard.innerHTML = `
-        <div class="card">
-          <img src=${element.img} class="card-img-top" alt="book_picture">
-          <div class="card-body">
-              <div class="tuttoTitolo d-flex justify-content-between">
-                  <h5 class="card-title">${element.title}</h5>
-                  <span class="badge bg-primary rounded-pill my-2 d-flex align-items-center justify-content-center">${element.category}</span>
-              </div>
-              <span class = "asin" style = "display: none;">${element.asin}</span>
-            <p class="card-text text-center">${element.price}\$</p>
-            <div class="contBtn d-flex justify-content-around">
-              <a href="#" class="btn btn-success">Add to Cart</a>
-              <a href="#" class="btn btn-danger">Remove</a>
-            </div>
-          </div>
-        </div>
-        `
-        let divContenitoreLocandine = document.querySelector ('#contenitoreLocandine');
-        divContenitoreLocandine.appendChild(divCard);
+    let arrayJson = localStorage.getItem('carrello');
+    let carrello = JSON.parse(arrayJson || '[]');
+    console.log(carrello);
+
+    element.forEach((element, index) => {
+        if (element.asin && carrello.includes(element.asin)) {
+            let divCard = document.createElement('div');
+            divCard.classList = 'col';
+            divCard.innerHTML = `
+                <div class="card">
+                <img src=${element.img} class="card-img-top" alt="book_picture">
+                <div class="card-body">
+                    <div class="tuttoTitolo d-flex justify-content-between">
+                        <h5 class="card-title">${element.title}</h5>
+                        <span class="badge bg-primary rounded-pill my-2 d-flex align-items-center justify-content-center">${element.category}</span>
+                    </div>
+                    <span class = "asin" style = "display: none;">${element.asin}</span>
+                    <p class="card-text text-center">${element.price}\$</p>
+                    <div class="contBtn d-flex justify-content-around">
+                    <span>Added to Cart</span>
+                    </div>
+                </div>
+                </div>
+                `
+            let divContenitoreLocandine = document.querySelector ('#contenitoreLocandine');
+            divContenitoreLocandine.appendChild(divCard);
+        } else {
+             let divCard = document.createElement('div');
+            divCard.classList = 'col';
+            divCard.innerHTML = `
+                <div class="card">
+                <img src=${element.img} class="card-img-top" alt="book_picture">
+                <div class="card-body">
+                    <div class="tuttoTitolo d-flex justify-content-between flex-wrap">
+                        <h5 class="card-title">${element.title}</h5>
+                        <span class="badge bg-primary rounded-pill my-2 d-flex align-items-center justify-content-center">${element.category}</span>
+                    </div>
+                    <span class = "asin" style = "display: none;">${element.asin}</span>
+                    <p class="card-text text-center">${element.price}\$</p>
+                    <div class="contBtn d-flex justify-content-around">
+                    <a href="#" class="btn btn-success">Add to Cart</a>
+                    <a href="#" class="btn btn-danger">Remove</a>
+                    </div>
+                </div>
+                </div>
+                `
+            let divContenitoreLocandine = document.querySelector ('#contenitoreLocandine');
+            divContenitoreLocandine.appendChild(divCard);
+        }
 })
 }
 

@@ -11866,4 +11866,12 @@ body {
 
 #contenitoreLocandine .badge {
   max-height: 1.5em;
+}
+
+.card img {
+  height: 22em;
+}
+
+.card-title {
+  font-size: 1.1em;
 }/*# sourceMappingURL=style.css.map */
