@@ -50,11 +50,19 @@ fetch(UrlPexel, {
       });
     })
     .catch(error => console.log(error + 'errore'))
+
+    localStorage.setItem('queryAttuale', query)
   }
 
 
 
   document.addEventListener('DOMContentLoaded', () => {
+
+    if (localStorage.getItem('queryAttuale') !=null) {
+      let ultimaRicerca = localStorage.getItem('queryAttuale');
+      loadImmagini(ultimaRicerca);
+    }
+
     document.querySelector('#divBottoni').addEventListener('click', (e) => {
         e.preventDefault();
         if(e.target.className == 'btn btn-primary my-2') {
@@ -74,7 +82,18 @@ fetch(UrlPexel, {
         let figlio = e.target.parentNode.parentNode.parentNode.parentNode.parentNode;
         parent.removeChild(figlio)
       }
-    
+      if (e.target.className == 'btn btn-sm btn-success text-white btn-outline-secondary') {
+        let idFoto = e.target.parentNode.parentNode.parentNode.childNodes[3].childNodes[3].childNodes[0].nodeValue;
+        console.log(idFoto)
+      }
     })
+
+    document.querySelector('#bottoneRicerca').addEventListener('click', (e) => {
+      e.preventDefault();
+      let input = document.querySelector('#barraRicerca').value;
+      loadImmagini(input); 
+
+    })
+    
 })
 
