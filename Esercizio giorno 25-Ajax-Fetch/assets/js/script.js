@@ -85,6 +85,7 @@ fetch(UrlPexel, {
       if (e.target.className == 'btn btn-sm btn-success text-white btn-outline-secondary') {
         let idFoto = e.target.parentNode.parentNode.parentNode.childNodes[3].childNodes[3].childNodes[0].nodeValue;
         console.log(idFoto)
+        apriNuovaTabConQS(idFoto)
       }
     })
 
@@ -97,3 +98,7 @@ fetch(UrlPexel, {
     
 })
 
+
+function apriNuovaTabConQS(idFoto) {
+  window.open("dettaglio.html" + "?id" + idFoto + '_blanck');
+}
