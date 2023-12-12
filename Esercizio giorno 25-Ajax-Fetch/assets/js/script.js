@@ -26,7 +26,7 @@ fetch(UrlPexel, {
         let divCol = document.createElement('div');
         divCol.className = 'cardsingola col-md-4 d-flex align-items-stretch';
         divCol.innerHTML = `<div class="card mb-4 shadow-sm">
-        <img src="${element.src.large}" alt="${element.alt}">
+        <img src="${element.src.portrait}" alt="${element.alt}">
         <div class="card-body">
           <p class="card-text">
             ${element.alt}
