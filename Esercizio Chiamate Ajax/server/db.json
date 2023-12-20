@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "email": "pappone94@hotmail.it",
+      "password": "$2a$10$S7A4bUjZlVAJlpHlO.FAj.j5WHPqsE4VTdEovdYRwdv5Q/s9tGJ..",
+      "nome": "Tony",
+      "lastName": "Montana",
+      "age": "45",
+      "id": 1
+    },
+    {
+      "email": "mario24@gmail.com",
+      "password": "$2a$10$VKg38oyk5xruve7kxYcNDOYeVG2s85bYGMR3mrEZ0TrBq7Ion14pe",
+      "nome": "Mario",
+      "lastName": "Longo",
+      "age": "22",
+      "id": 2
+    },
+    {
+      "email": "peppecrypto@hotmail.it",
+      "password": "$2a$10$VlxXMO8aiSFd.WXbn86vL.StyAb.rXjJWRYtiy9VkYNBP.L9rWeC6",
+      "nome": "Giuseppe",
+      "lastName": "Longo",
+      "age": "55",
+      "id": 3
+    }
+  ]
+}
