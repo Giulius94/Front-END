@@ -53,19 +53,40 @@ function getData(email, password , firstName , lastName , age) {
 
 }
 
-function login(email, password) {
+async function login(email, password) {
     let obj2 = {
         'email': email ,
         'password': password,
         }
 
         console.log(JSON.stringify(obj2))
-    
-        fetch(urlLogin, {
+       
+       
+
+        await fetch(urlLogin, {
             method: 'POST', 
             headers: {'Content-Type': 'application/json'}, 
             body: JSON.stringify(obj2) 
         }).then(response => response.json())
-            .then(json => console.log(json))
-            .catch(err => console.log(err + 'Errore'));    
+            .then(json => {
+                creaBanner(json)
+            })
+            .catch(err => errorLogin = err) 
+}
+
+function creaBanner(token) {
+    
+    if (token.accessToken) {
+        let correct = document.querySelector('#spanLogin')
+        correct.innerHTML = `
+        <div class="alert alert-success mt-5" role="alert">
+            Login successful!
+        </div>`
+    } else {
+        let uncorrect = document.querySelector('#spanLogin')
+        uncorrect.innerHTML = `
+        <div class="alert alert-danger mt-5" role="alert">
+            Login unsuccessful!
+        </div>`
+    }
 }
