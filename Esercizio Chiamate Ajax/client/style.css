@@ -2,3 +2,8 @@
     width: 4em;
     border-radius: 50%;
 }
+
+#pandazonBody {
+    border-radius: 50%;
+    width: 50%;
+}
