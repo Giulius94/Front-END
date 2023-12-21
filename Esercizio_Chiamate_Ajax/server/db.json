@@ -24,5 +24,17 @@
       "age": "55",
       "id": 3
     }
+  ],
+  "products": [
+    {
+      "marca": "Ferrari",
+      "modello": "Enzo",
+      "categoria": "Auto",
+      "prezzo": "1000000",
+      "quantita": "1",
+      "immagine": "https://cdn.motor1.com/images/mgl/vmbmR/s1/copertina-ferrari-enzo-lultima-pura-del-cavallino.jpg",
+      "userId": 3,
+      "id": 1
+    }
   ]
 }
