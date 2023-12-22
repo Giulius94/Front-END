@@ -27,14 +27,34 @@
   ],
   "products": [
     {
-      "marca": "Ferrari",
-      "modello": "Enzo",
-      "categoria": "Auto",
-      "prezzo": "1000000",
+      "marca": "ferrari",
+      "modello": "enzo",
+      "categoria": "auto",
+      "prezzo": "100000",
       "quantita": "1",
-      "immagine": "https://cdn.motor1.com/images/mgl/vmbmR/s1/copertina-ferrari-enzo-lultima-pura-del-cavallino.jpg",
+      "immagine": "https://cdn.motor1.com/images/mgl/vmbmR/s3/copertina-ferrari-enzo-lultima-pura-del-cavallino.jpg",
       "userId": 3,
       "id": 1
+    },
+    {
+      "marca": "Fiat",
+      "modello": "panda",
+      "categoria": "auto",
+      "prezzo": "40000",
+      "quantita": "1",
+      "immagine": "https://cdn.motor1.com/images/mgl/wg9mN/s1/fiat-panda-4x4-piccola-arrampicatrice.jpg",
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "marca": "Volkswagen",
+      "modello": "Polo",
+      "categoria": "Mario's Car",
+      "prezzo": "19000",
+      "quantita": "1",
+      "immagine": "https://prod.pictures.autoscout24.net/listing-images/f7258d5a-05c9-47c0-9a27-384ab0069dba_7d526f5c-f6d8-47a7-ba7c-211fa84eee68.jpg/720x540.webp",
+      "userId": 3,
+      "id": 4
     }
   ]
 }
