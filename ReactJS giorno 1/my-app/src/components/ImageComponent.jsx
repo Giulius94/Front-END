@@ -1,7 +1,14 @@
-function ImageComponent(props){
-    return(
-   <img src = {props.src} alt = {props.alt}/>
-    )
-}
+import React, { Component } from 'react'
 
-export default ImageComponent
+export default class ImageComponent extends Component {
+
+   /*  constructor(props){
+        super(props)
+    } */
+
+  render() {
+    return (
+      <img src = {this.props.image} alt = {this.props.title} />
+    )
+  }
+}
