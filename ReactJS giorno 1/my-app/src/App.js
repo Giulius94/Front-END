@@ -1,6 +1,7 @@
 import './App.css';
 import ButtonComponent from './components/ButtonComponent';
 import ImageComponent from './components/ImageComponent';
+import FetchData from './components/FetchData';
 
 const dati = {
   title : "BottonNameExample",
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <ButtonComponent buttonTitle = {dati.title}/>
       <ImageComponent alt={dati.altImage} src = {dati.srcImage} />
+      <FetchData />
     </div>
   );
 }
