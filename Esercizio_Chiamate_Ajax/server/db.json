@@ -28,7 +28,7 @@
   "products": [
     {
       "immagine": "https://cdn.motor1.com/images/mgl/vmbmR/s3/copertina-ferrari-enzo-lultima-pura-del-cavallino.jpg",
-      "modello": "senzo",
+      "modello": "sen",
       "marca": "ferrari",
       "quantita": "2",
       "prezzo": "100000",
@@ -39,7 +39,7 @@
       "modello": "Polos",
       "marca": "Volkswagen",
       "quantita": "3",
-      "prezzo": "30000",
+      "prezzo": "300",
       "id": 4
     }
   ]
