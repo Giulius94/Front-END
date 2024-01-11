@@ -50,7 +50,7 @@ export default class AllTheBooks extends Component {
         /* books : {} */
         books: [],
         searchQuery: '',
-        filterBooks : []
+        filterBooks: []
     }
 
     componentDidMount() {
@@ -64,14 +64,16 @@ export default class AllTheBooks extends Component {
         this.setState({
             books: [...Fantasy]
         })
+
+        
     }
 
     getSearchQuery = () => {
-        this.setState({filterBooks : this.state.books.filter(book => book.title.includes(this.state.searchQuery))})
+        this.setState({ filterBooks: this.state.books.filter(book => book.title.includes(this.state.searchQuery)) })
     }
 
     render() {
-       /*  console.log(this.state.searchQuery) */
+        /*  console.log(this.state.searchQuery) */
         return (
             <>
                 <Row className='my-5'>
@@ -83,7 +85,7 @@ export default class AllTheBooks extends Component {
                             size="md"
                             type="text"
                             placeholder="Search Book Title"
-                            onChange={(e)=> this.setState({searchQuery : e.target.value })} />
+                            onChange={(e) => this.setState({ searchQuery: e.target.value })} />
                     </Col>
                     <Col lg='2'>
                         <Button variant='success' onClick={this.getSearchQuery}>Search</Button>

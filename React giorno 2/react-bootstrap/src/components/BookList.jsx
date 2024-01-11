@@ -8,7 +8,7 @@ export default function BookList({ books }) {
             <Row>
                 {books.map((book, index) => (
                     <Col xs={12} md={4} className='my-5' key={index}>
-                        <SingleBook book = {book}/>
+                        <SingleBook book = {book} valIndex = {index}/>
                     </Col>
                 ))}
             </Row>

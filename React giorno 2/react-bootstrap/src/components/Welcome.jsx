@@ -3,7 +3,7 @@ import { Button, Container } from 'react-bootstrap'
 
 export default function Welcome() {
     return (
-            <Container className='bg-primary rounded mt-5'>
+            <Container className='bg-secondary rounded mt-5'>
                 <h1>Hello, world!</h1>
                 <p>
                     Welcome to my Library

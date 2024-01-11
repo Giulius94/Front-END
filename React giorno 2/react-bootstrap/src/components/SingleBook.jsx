@@ -20,31 +20,37 @@ export default function SingleBook({ book }) {
 
 import React, { Component } from 'react'
 import { Card } from 'react-bootstrap'
+import CommentArea from './CommentArea';
 
 export default class SingleBook extends Component {
 
     state = {
-        selected : false
+        selected: false
     }
 
 
-  render() {
-    return (
-        <Card style={{ width: '25rem' }} className={this.state.selected === true ? "selected-book" : ""}>
-        <Card.Img 
-        variant="top" 
-        src={this.props.book.img} 
-        onClick={() => this.setState((prevState) =>({selected : !prevState.selected}))} />
-        <Card.Body>
-            <Card.Title>{this.props.book.title}</Card.Title>
-            <Card.Text>
-                {this.props.book.category}
-            </Card.Text>
-            <Card.Text>
-                {this.props.book.price}
-            </Card.Text>
-        </Card.Body>
-    </Card>
-    )
-  }
+    render() {
+        return (
+            <Card style={{ width: '25rem' }} className={this.state.selected === true ? "selected-book" : ""}>
+                <Card.Img
+                    variant="top"
+                    src={this.props.book.img}
+                    onClick={() => this.setState((prevState) => ({ selected: !prevState.selected }))} />
+                <Card.Body>
+                    <Card.Title>{this.props.book.title}</Card.Title>
+                    <Card.Text>
+                        {this.props.book.category}
+                    </Card.Text>
+                    <Card.Text>
+                        {this.props.book.price}
+                    </Card.Text>
+                    {this.state.selected === true &&
+                        <>
+                        <CommentArea asin = {this.props.book.asin} />
+                        </>
+                    }
+                </Card.Body>
+            </Card>
+        )
+    }
 }
