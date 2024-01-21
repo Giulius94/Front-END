@@ -1,12 +1,13 @@
 import { Row, Col, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import React from 'react'
-import { useDispatch } from 'react-redux'
-import { addFavourites } from '../action'
+import { useDispatch, useSelector } from 'react-redux'
+import { addFavourite } from '../slice/favouritesSlice'
 
 export default function Job({ data }) {
 
   const dispatch = useDispatch()
+  const favourites = useSelector(state => state.favourites.favourites)
 
   return (
     <Row
@@ -22,7 +23,7 @@ export default function Job({ data }) {
       </a>
       </Col>
       <Col xs={2}>
-      <Button variant="info" onClick={()=> dispatch(addFavourites(data))}> Save Favourite</Button>
+      <Button variant="info" onClick={()=> dispatch(addFavourite(data))}> Save Favourite</Button>
       </Col>
   </Row>
   )

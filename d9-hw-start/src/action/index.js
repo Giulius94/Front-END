@@ -3,5 +3,5 @@ export const addFavourites = (data) => {
 }
 
 export const deleteFavourites = (data) => {
-    return {type: 'DELETE_FAVOURITES', payload: data}
+    return {type: 'REMOVE_FAVOURITES', payload: data}
 }

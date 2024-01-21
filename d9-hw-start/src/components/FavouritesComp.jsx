@@ -7,7 +7,7 @@ export default function Favourites() {
 
   const navigate = useNavigate()
 
-  const jobList = useSelector(state => state)
+  const jobList = useSelector(state => state.favourites.favourites)
   console.log(jobList)
 
   return (

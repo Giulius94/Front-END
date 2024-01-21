@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Col, Row } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
-import { deleteFavourites } from '../action'
+import { removeFavourite } from '../slice/favouritesSlice'
 
 export default function MyFavourites({e}) {
 
@@ -16,7 +16,7 @@ export default function MyFavourites({e}) {
           <p>{e.category}</p>
        </Col>
        <Col xs={2}>
-         <Button variant="info" onClick={()=> dispatch(deleteFavourites(e.title))}>Remove</Button>
+         <Button variant="info" onClick={()=> dispatch(removeFavourite(e.title))}>Remove</Button>
        </Col>
        </Row>
   )

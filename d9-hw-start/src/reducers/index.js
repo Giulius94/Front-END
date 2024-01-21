@@ -4,7 +4,7 @@ export default function storeReducer(state = [], action) {
         case 'ADD_FAVOURITES':
             console.log(action.payload)
             return [...state, action.payload]
-        case 'REMOVE_FAVOURITES':
+        case 'DELETE_FAVOURITES':
             return state.filter(u => u.title !== action.payload)    
         default:
             break;
