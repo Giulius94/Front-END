@@ -1,0 +1,1 @@
+export default interface IUser { id: number, image_url: string, news_site: string, title: string, published_at: string, summary: string }
